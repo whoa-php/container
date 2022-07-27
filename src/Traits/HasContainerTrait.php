@@ -31,11 +31,10 @@ trait HasContainerTrait
     /**
      * @var null|ContainerInterface
      */
-    private $container = null;
+    private ?ContainerInterface $container = null;
 
     /**
      * @param ContainerInterface $container
-     *
      * @return self
      */
     protected function setContainer(ContainerInterface $container): self

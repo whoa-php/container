@@ -62,7 +62,7 @@ class ContainerTest extends TestCase
     public function testHasContainerTrait(): void
     {
         $container = new Container();
-        $class     = new class {
+        $class = new class {
             use HasContainerTrait {
                 getContainer as public;
                 setContainer as public;
